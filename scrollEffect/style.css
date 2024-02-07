@@ -20,15 +20,16 @@ section {
 #moon {
     margin-top: 35px;
     margin-left: 40px;
-    width: 200px;
-    height: 25%;
+    width: 182px;
+    height: 22.2%;
     opacity: 0.5;
 }
 #mountain {
     margin-top: 50px;
 }
-#tree {
+#walk {
     margin-top: 70px;
+    z-index: 2;
 }
 section:before {
     content: '';
@@ -65,15 +66,15 @@ section img {
     font-size: 9em;
     z-index: 1;
 }
-#tree {
-    z-index: 2;
-}
 .write {
     color: #fff;
     margin-top: 100px;
     left: 100px;
     position: absolute;
     font-size: 3em;
+}
+#text {
+    word-spacing: 40px;
 }
 .wr {
     color: #fff;

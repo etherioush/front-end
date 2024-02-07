@@ -11,8 +11,8 @@
         <img src="img/bg.jpg" id="bg">
         <img src="img/moon.png" id="moon">
         <img src="img/mountain.png" id="mountain">
-        <img src="img/tree.png" id="tree">
-        <h2 id="text">Moon Light</h2>
+        <img src="img/walk.png" id="walk">
+        <h2 id="text">Moon Walk</h2>
     </section>
     <h2 class="write">
         Why are you all so down
@@ -51,7 +51,7 @@
         let bg = document.getElementById("bg");
         let moon = document.getElementById("moon");
         let mountain = document.getElementById("mountain");
-        let tree = document.getElementById("tree");
+        let walk = document.getElementById("walk");
         let text = document.getElementById("text");
 
         window.addEventListener('scroll', function(){
@@ -60,7 +60,7 @@
             bg.style.top = value * 0.5 + 'px';
             moon.style.left = value * 0.5 + 'px';
             mountain.style.top = -value * 0.15 + 'px';
-            tree.style.top = value * 0.15 + 'px';
+            walk.style.top = value * 0.15 + 'px';
             text.style.top = value * 1 + 'px';
         })
     </script>
