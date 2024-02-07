@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrollEffect</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="img/bg.jpg" id="bg">
+        <img src="img/moon.png" id="moon">
+        <img src="img/mountain.png" id="mountain">
+        <img src="img/tree.png" id="tree">
+        <h2 id="text">Moon Light</h2>
+    </section>
+    <h2 class="write">
+        Why are you all so down
+    </h2>
+    <h4 class="wr">
+        What's the problem say something<br>
+        The atmosphere is so cold. Is this a trend these days<br>
+        Why aren't you all that funny? Oh, that's the same for me<br>
+        Tell me what I got to do Turn on Bluetooth as soon as possible<br>
+        Just play any song. Anything exciting<br>
+        Just dance whatever you want to make it look like it's nothing<br>
+        I don't want to think about anything. I want to live with anything for a while<br>
+        I'm sick and tired of my every day, keep it up<br>
+        <br>
+        Just play any song. Whatever. It's so boring<br>
+        I think it's urgent to refresh, so the stress is building up<br>
+        It's a day I want to laugh so hard that I can't stop laughing<br>
+        What up my dawgs? Where are you? Get some bottled beer and crackers when you come. Uh<br>
+        I don't really like clubbing. Come to my living room quickly<br>
+        <br>
+        I'm not gonna have enough time to chat all night<br>
+        Someone's going to die and someone's festival, I want my your back<br>
+        One by one, you're going to cut me off after a while<br>
+        Why are you all so down? What's the problem? Say something<br>
+        The atmosphere is so cold. Is this a trend these days<br>
+        Why aren't you all that funny? Oh, that's the same for me<br>
+        Tell me what I got to do Turn on Bluetooth as soon as possible<br>
+        <br>
+        Just play any song. Anything exciting<br>
+        Just dance whatever you want to make it look like it's nothing<br>
+        I don't want to think about anything. I want to live with anything for a while<br>
+        I'm sick and tired of my every day, keep it up<br>
+    </h4>
+
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let tree = document.getElementById("tree");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            tree.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
+</body>
+</html>
